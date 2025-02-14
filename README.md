@@ -59,3 +59,7 @@ This project is for educational purposes and does not have a specific license. M
 
 ## 🌐 Live Website  
 🔗 [Click here to view the website](https://sanjaywaugh1103.github.io/PeakGear/)
+
+## ⚠️ Disclaimer  
+🔹 The login functionality **will not work** because it is built using PHP, which requires a server-side environment like XAMPP or a live hosting server.   
+🔹 To test the login, you need to set up a local PHP server.
