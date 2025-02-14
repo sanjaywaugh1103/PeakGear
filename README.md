@@ -57,3 +57,5 @@ This project is for educational purposes and does not have a specific license. M
 
 💡 Got any feedback? Reach out and let’s improve PeakGear together!
 
+## 🌐 Live Website  
+🔗 [Click here to view the website](https://sanjaywaugh1103.github.io/PeakGear/)
