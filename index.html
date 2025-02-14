@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeakGear</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/mini logo.png" alt="Peak Gear Logo"></a>
+        </div>
+        <div class="search-bar">
+            <img src="images/search logo.png" alt="Search Icon" class="search-icon" >
+            <input type="text" placeholder="Search" onclick="showDropdown()"
+            oninput="showSuggestions()"
+            id="searchBar">
+            <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <img src="images/home logo.png" alt="Home Icon" class="Icon"> Home
+                </a>
+            </li>
+            <li>
+                <a href="login.php">
+                    <img src="images/login logo.png" alt="Login Icon" class="Icon"> Login
+                </a>
+            </li>
+            <li>
+                <a href="products.html">
+                    <img src="images/products logo.png" alt="Products Icon" class="Icon"> Products
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <img src="images/cart logo.png" alt="Cart Icon" class="Icon"> Cart
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!----coupon-->
+    <div class ="coupon-container">
+        <a href="newusersale.html">
+            <img src="images/upto 200.jpeg" alt="new user coupon offer">
+        </a>
+    </div>
+    <!----categories--->
+    <div class="categories-container">
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="winter.html">
+                <img src="images/winter logo.avif" alt="winter Collection">
+                </a>
+            </div>
+            <span class="name">Winter Collection</span>
+        </div> 
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Men.avif" alt="Men">
+                </a>
+            </div>
+            <span class="name">Men</span>
+        </div>
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Women.avif" alt="Women">
+                </a>
+            </div>
+            <span class="name">Women</span>
+        </div>
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Kids.avif" alt="Kids">
+                </a>
+            </div>
+            <span class="name">Kids</span>
+        </div>
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Accessories.avif" alt="Sports Accessories">
+                </a>
+            </div>
+            <span class="name">Sports Accessories</span>
+        </div>
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Bags.avif" alt="Bags">
+                </a>
+            </div>
+            <span class="name">Bags and Backpacks</span>
+        </div>
+        <div class="grid-category">
+            <div class="Product-image">
+                <a href="">
+                <img src="images/Shoes.avif" alt="Shoes">
+                </a>
+            </div>
+            <span class="name">Shoes</span>
+        </div> 
+    </div>
+    <!--Slider Contaoner-->
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <a href="index.html"><img src="images/defaut (1).avif" alt="Slide 1"></a>
+            </div>
+            <div class="item">
+                <a href="winter.html"><img src="images/defaut (2).avif" alt="Slide 2"></a>
+            </div>
+            <div class="item">
+                <a href="winter.html"><img src="images/defaut.avif" alt="Slide 3"></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/sale.png" alt="Slide 4"></a>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--New Arrival product slider-->
+    <div class="product-slider-container">
+        <h2>New Arrival</h2>
+        <div class="product-slider">
+        <div class="product-list">
+            <!-- Product Cards -->
+            
+            <div class="product-card">
+                <a href="Nikebag.html">
+                    <img src="images/Nike Hayward bag.png" alt="NIke Bag">
+                    <h3>Nike</h3>
+                    <p>Nike Hayward
+                        Backpack (26L)</p>
+                    <p>₹3,795 <span class="original-price"></span> </p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="1"
+                    data-product-name="Nike Hayward
+                    bag(26L)"
+                    data-product-price="3795"
+                    data-product-img ="images/Nike Hayward bag.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="JordanHeir.html">
+                    <img src="images/Jordan heir logo.png" alt="NIke Bag">
+                    <h3>Jordan</h3>
+                    <p>Jordan Heir Series PF Basketball</p>
+                    <p>₹9,695 </p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="2"
+                    data-product-name="Jordan Heir Series PF Basketball"
+                    data-product-price="9695"
+                    data-product-img ="images/Jordan heir logo.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="Zion.html">
+                    <img src="images/Zion Main.png" alt="Puma Egypt Jersey">
+                    <h3>Zion</h3>
+                    <p>Zion
+                        Men's Fleece Pullover Hoodie</p>
+                    <p>₹4,495</p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="3"
+                    data-product-name="Zion
+                    Men's Fleece Pullover Hoodie"
+                    data-product-price="4495"
+                    data-product-img ="images/Zion Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="Brooklytrousers.html">
+                    <img src="images/Brooklyn Pants Main.png" alt="NIke Bag">
+                    <h3>DOMYOS</h3>
+                    <p>Men Tracksuit Jacket Polyester - Blue</p>
+                    <p>₹3795</p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="4"
+                    data-product-name="Jordan Brooklyn Fleece
+                    Men's Trousers"
+                    data-product-price="3795"
+                    data-product-img ="images/Brooklyn Pants Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="NikeSlide.html">
+                    <img src="images/Nike Slides.png" alt="NIke Bag">
+                    <h3>Nike</h3>
+                    <p>Nike Air More Uptempo
+                        Men's Slides</p>
+                    <p>₹8495</p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="5"
+                    data-product-name="Nike Air More Uptempo
+                    Men's Slides"
+                    data-product-price="8495"
+                    data-product-img ="images/Nike Slides.png">Add to Cart</button>
+            </div>
+         </div>
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+      <!--Free delivery sticker-->
+    <div class="freedelivstick-container">
+            <img src="images/freee delivery sticker.avif" alt="free delivery">
+    </div>
+
+    <!--2nd Products slider container-->
+    <div class="product-slider-container">
+        <h2>Clearance Sale</h2>
+        <div class="product-slider">
+        <div class="product-list">
+            <!-- Product Cards -->
+            
+            
+            <div class="product-card">
+                <a href="Nikejam.html">
+                    <img src="images/Nike Jam Main.png" alt="NIke Bag">
+                    <h3>Nike</h3>
+                    <p>Nike JAM
+                        Women's Shoes - Beige</p>
+                    <p>₹10,257<span class="original-price">₹10,795</span> <span class="discount">61% Off</span></p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="6"
+                    data-product-name="Nike JAM
+                    Women's Shoes-Beige"
+                    data-product-price="10257"
+                    data-product-img ="images/Nike Jam Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="NikeClubSweatWomen.html">
+                    <img src="images/Nike Club Sweatshirt Main.png" alt="NIke Bag">
+                    <h3>DOMYOS</h3>
+                    <p>Nike Sportswear Club Fleece
+                        Women's Crew</p>
+                    <p>₹3,127<span class="original-price">₹3,899</span> <span class="discount">20% Off</span></p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="7"
+                    data-product-name="Nike Sportswear Club Fleece
+                    Women's Crew-Neck Sweatshirt"
+                    data-product-price="3127"
+                    data-product-img ="images/Nike Club Sweatshirt Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="Wildruner.html">
+                    <img src="images/Nike Wild runner Main.png" alt="Wildruner">
+                    <h3>Nike</h3>
+                    <p>Nike Windrunner
+                        Men's Repel Running Jacket</p>
+                    <p>₹6,167<span class="original-price">₹6,495</span> <span class="discount">10% Off</span></p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="8"
+                    data-product-name="Nike Windrunner
+                    Men's Repel Running Jacket"
+                    data-product-price="6167"
+                    data-product-img ="images/Nike Wild runner Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="NikeClubCap.html">
+                    <img src="images/Nike Club Cap Main.png" alt="NIke Bag">
+                    <h3>Nike</h3>
+                    <p>Nike Club
+                        Unstructured Cap</p>
+                    <p>₹1,229<span class="original-price">₹1,295</span> <span class="discount">5% Off</span></p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="9"
+                    data-product-name="Nike Club
+                    Unstructured Cap"
+                    data-product-price="1229"
+                    data-product-img ="images/Nike Club Cap Main.png">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="NikePeakBeannie.html">
+                    <img src="images/Nike Peak Beannie.png" alt="NIke Bag">
+                    <h3>Nike</h3>
+                    <p>Nike Peak
+                        ACG Beanie</p>
+                    <p>₹1,897<span class="original-price">₹1,995</span> <span class="discount">8% Off</span></p>
+                </a>    
+                <button class="add-to-cart"
+                    data-product-id="10"
+                    data-product-name="Nike Peak
+                    ACG Beanie"
+                    data-product-price="1897"
+                    data-product-img ="images/Nike Hayward bag.png">Add to Cart</button>
+            </div>
+         </div>
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+    <!--Made in india sticker-->
+    <div class="made-in-india-container">
+        <img src="images/Made in india.avif" alt="new user coupon offer">
+    </div>
+    <div class="service-container">
+        <div class="service-product">
+            <img src="images/cycle service.avif" alt="Winter Shoes for Men">
+        </div>
+        <div class="service-product">
+            <img src="images/Racket stringing.avif" alt="Winter Shoes for Women">
+        </div>
+        <div class="service-product">
+            <img src="images/free assist.avif" alt="Winter Shoes for Kids">
+        </div>
+        <div class="service-product">
+            <img src="images/buy back.avif" alt="Warmers for All">
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Contact our Stores</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Decathlon for Schools</a></li>
+                <li><a href="#">Decathlon for Corporates</a></li>
+                <li><a href="#">Decathlon for Sport Clubs</a></li>
+                <li><a href="#">Decathlon Gift Cards</a></li>
+                <li><a href="#">Installation & Assembly Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Made In India</a></li>
+                <li><a href="#">Social Initiatives</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <span>
+        
+        </span>
+    </footer>
+    <div class="footer-copyright">
+        © 2025 Peakgear Sports India Pvt Ltd. All rights reserved.
+    </div>
+<script src="JS/productsslider.js" defer></script>
+</body>
+</html>
