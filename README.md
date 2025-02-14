@@ -43,9 +43,8 @@ Open your browser and go to:
 
 http://localhost/PeakGear/
 
-Live Demo (If Hosted)
-
-🔗 [Your Hosting Link Here]
+## 🌐 Live Website  
+🔗 [Click here to view the website](https://sanjaywaugh1103.github.io/PeakGear/)
 
 Contributing
 
@@ -57,8 +56,6 @@ This project is for educational purposes and does not have a specific license. M
 
 💡 Got any feedback? Reach out and let’s improve PeakGear together!
 
-## 🌐 Live Website  
-🔗 [Click here to view the website](https://sanjaywaugh1103.github.io/PeakGear/)
 
 ## ⚠️ Disclaimer  
 🔹 The login functionality **will not work** because it is built using PHP, which requires a server-side environment like XAMPP or a live hosting server.   
